@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Forms</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background: #f4f6f9;
+      padding: 40px;
+    }
+    .container-box {
+      max-width: 500px;
+      margin: auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container-box">
+
+  <h2>Bootstrap Forms</h2>
+
+  <form>
+
+    <!-- Text Input -->
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" class="form-control" placeholder="Enter name">
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" class="form-control" placeholder="Enter email">
+    </div>
+
+    <!-- Password -->
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" class="form-control" placeholder="Enter password">
+    </div>
+
+    <!-- Select -->
+    <div class="form-group">
+      <label>Course</label>
+      <select class="form-control">
+        <option>BCA</option>
+        <option>BSc</option>
+        <option>BCom</option>
+      </select>
+    </div>
+
+    <!-- Radio -->
+    <div class="form-group">
+      <label>Gender</label><br>
+      <div class="form-check form-check-inline">
+        <input type="radio" class="form-check-input" name="g"> Male
+      </div>
+      <div class="form-check form-check-inline">
+        <input type="radio" class="form-check-input" name="g"> Female
+      </div>
+    </div>
+
+    <!-- Checkbox -->
+    <div class="form-group">
+      <label>Skills</label><br>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input"> HTML
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input"> CSS
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input"> JavaScript
+      </div>
+    </div>
+
+    <!-- Textarea -->
+    <div class="form-group">
+      <label>Message</label>
+      <textarea class="form-control" rows="3"></textarea>
+    </div>
+
+    <!-- File Upload -->
+    <div class="form-group">
+      <label>Upload File</label>
+      <input type="file" class="form-control-file">
+    </div>
+
+    <!-- Submit -->
+    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+
+  </form>
+
+</div>
+
+</body>
+</html>
